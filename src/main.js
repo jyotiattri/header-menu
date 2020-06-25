@@ -7,6 +7,9 @@ Vue.config.productionTip = false;
 const Home = { template: "<div>Home</div>" };
 const About = { template: "<div>About</div>" };
 
+const routes = [
+  { path: "/Home", component: Home },
+]
 const router = new VueRouter({
   routes,
 });
