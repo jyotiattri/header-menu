@@ -7,7 +7,15 @@ Vue.config.productionTip = false;
 
 Vue.use(VueRouter);
 
-const routes = [{ path: "/about", component: About }];
+const routes = [
+  { path: "/about", component: About },
+  { path: "/travel", component: TravelPage,
+children: [
+  { path: "/travel/america", component: TravelAmericaPage },
+  { path: "/travel/england", component: TravelEnglandPage }
+]
+}
+];
 
 const router = new VueRouter({
   routes
