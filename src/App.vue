@@ -5,6 +5,11 @@
     <div class="header">
     
     <router-link to="/about">About Us</router-link>
+    <router-link to="/travel">Travel</router-link>
+    <div class="flex-container row2">
+      <router-link to="/travel/america">America</router-link>
+      <router-link to="/travel/england">England</router-link>
+    </div>
     </div>
     <router-view></router-view>
   </div>
